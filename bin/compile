@@ -378,6 +378,7 @@ install_newrelic_userini
 install_blackfire_agent
 
 if [[ -f ".post-install" ]]; then
+    echo "Running post install script"
     source .post-install
 fi
 
